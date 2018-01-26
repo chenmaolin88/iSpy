@@ -26,8 +26,8 @@ namespace iSpyApplication.Controls
             toolTip1.SetToolTip(mpcbFilter,LocRm.GetString("Filter"));
             toolTip1.SetToolTip(mpcbNext, LocRm.GetString("Next"));
             toolTip1.SetToolTip(mpcbPrevious, LocRm.GetString("Previous"));
-            toolTip1.SetToolTip(mpcbCloud, LocRm.GetString("UploadToCloud"));
-            toolTip1.SetToolTip(mpcbYouTube, "YouTube");
+            //toolTip1.SetToolTip(mpcbCloud, LocRm.GetString("UploadToCloud"));
+            //toolTip1.SetToolTip(mpcbYouTube, "YouTube");
             toolTip1.SetToolTip(mpcbMerge, LocRm.GetString("Merge"));
             mpcbMerge.Visible = Helper.HasFeature(Enums.Features.Recording);
         }
