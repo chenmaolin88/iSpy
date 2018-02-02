@@ -737,19 +737,19 @@ namespace iSpyApplication.Controls
                                     MainClass.EditMicrophone(Micobject);
                                 }
                                 break;
+                            //case 3:
+                            //    if (Helper.HasFeature(Enums.Features.Access_Media))
+                            //    {
+                            //        string url = MainForm.Webpage;
+                            //        if (WsWrapper.WebsiteLive && MainForm.Conf.ServicesEnabled)
+                            //        {
+                            //            MainForm.OpenUrl(url);
+                            //        }
+                            //        else
+                            //            MainClass.Connect(url, false);
+                            //    }
+                            //    break;
                             case 3:
-                                if (Helper.HasFeature(Enums.Features.Access_Media))
-                                {
-                                    string url = MainForm.Webpage;
-                                    if (WsWrapper.WebsiteLive && MainForm.Conf.ServicesEnabled)
-                                    {
-                                        MainForm.OpenUrl(url);
-                                    }
-                                    else
-                                        MainClass.Connect(url, false);
-                                }
-                                break;
-                            case 4:
                                 if (IsEnabled)
                                 {
                                     Listen();
@@ -869,18 +869,18 @@ namespace iSpyApplication.Controls
                                     _toolTipMic.Show(LocRm.GetString("Edit"), this, toolTipLocation, 1000);
                                     _ttind = 2;
                                     break;
+                                //case 3:
+                                //    if (Helper.HasFeature(Enums.Features.Access_Media))
+                                //    {
+                                //        _toolTipMic.Show(LocRm.GetString("MediaoverTheWeb"), this, toolTipLocation, 1000);
+                                //        _ttind = 3;
+                                //    }
+                                //    break;
                                 case 3:
-                                    if (Helper.HasFeature(Enums.Features.Access_Media))
-                                    {
-                                        _toolTipMic.Show(LocRm.GetString("MediaoverTheWeb"), this, toolTipLocation, 1000);
-                                        _ttind = 3;
-                                    }
-                                    break;
-                                case 4:
                                     _toolTipMic.Show(Listening
                                         ? LocRm.GetString("StopListening")
                                         : LocRm.GetString("Listen"), this, toolTipLocation, 1000);
-                                    _ttind = 4;
+                                    _ttind = 3;
 
                                     break;
                             }
@@ -1178,10 +1178,10 @@ namespace iSpyApplication.Controls
                 case 2://settings
                     rSrc = Helper.HasFeature(Enums.Features.Edit) ? MainForm.REdit : MainForm.REditOff;
                     break;
-                case 3://web
-                    rSrc = Helper.HasFeature(Enums.Features.Access_Media) ? MainForm.RWeb : MainForm.RWebOff;
-                    break;
-                case 4://listen
+                //case 3://web
+                //    rSrc = Helper.HasFeature(Enums.Features.Access_Media) ? MainForm.RWeb : MainForm.RWebOff;
+                //    break;
+                case 3://listen
                     if (b)
                         rSrc = Listening ? MainForm.RListenOn : MainForm.RListen;
                     else

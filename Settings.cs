@@ -585,15 +585,15 @@ namespace iSpyApplication
             tabPage4.Text = LocRm.GetString("Timeouts");
             tabPage6.Text = LocRm.GetString("options");
             tabPage7.Text = LocRm.GetString("IPAccess");
-            linkLabel1.Text = LocRm.GetString("GetLatestList");
+            //linkLabel1.Text = LocRm.GetString("GetLatestList");
             Text = LocRm.GetString("settings");
-            linkLabel2.Text = LocRm.GetString("HelpTranslateISpy");
+            //linkLabel2.Text = LocRm.GetString("HelpTranslateISpy");
             chkAlertWindows.Text = LocRm.GetString("CreateAlertWindow");
             chkOverlay.Text = LocRm.GetString("ShowOverlayControls");
             lblPriority.Text = LocRm.GetString("Priority");
             chkInterrupt.Text = LocRm.GetString("InterruptScreensaverOnAlert");
             label23.Text = LocRm.GetString("JPEGQuality");
-            llblHelp.Text = LocRm.GetString("help");
+            //llblHelp.Text = LocRm.GetString("help");
             label17.Text = LocRm.GetString("IPAccessExplainer");
             chkMonitor.Text = LocRm.GetString("RestartIfCrashed");
             chkGZip.Text = LocRm.GetString("Enable GZip");
@@ -674,7 +674,7 @@ namespace iSpyApplication
             chkEnableLogging.Text = LocRm.GetString("Enable");
             numKeepLogs.Text = LocRm.GetString("KeepLogsForDays");
             numMaxLogSize.Text = LocRm.GetString("MaxFileSizeKB");
-            llblHelp.Visible = linkLabel1.Visible = linkLabel2.Visible = Helper.HasFeature(Enums.Features.View_Ispy_Links);
+            //llblHelp.Visible = linkLabel1.Visible = linkLabel2.Visible = Helper.HasFeature(Enums.Features.View_Ispy_Links);
         }
 
 
@@ -1233,7 +1233,7 @@ namespace iSpyApplication
 
             txtAlertSubject.Text = "[EVENT]: [SERVER] [OBJECTNAME]";
             txtAlertBody.Text = txtSMSBody.Text = "[EVENT] at [DATE] [TIME]: [SERVER] [OBJECTNAME] [RECORDED] [PLUGIN]";            
-            txtAppendLinkText.Text = "<br/>ispyconnect.com";
+            txtAppendLinkText.Text = "<br/>baidu.com";
         }
 
         private void chkUseiSpy_CheckedChanged(object sender, EventArgs e)
@@ -1311,6 +1311,11 @@ namespace iSpyApplication
         private void button3_Click(object sender, EventArgs e)
         {
             MainForm.InstanceReference.RunStorageManagement(true);
+        }
+
+        private void txtAppendLinkText_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

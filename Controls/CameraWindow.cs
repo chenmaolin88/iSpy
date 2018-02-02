@@ -1099,31 +1099,31 @@ namespace iSpyApplication.Controls
                                             MainClass.EditCamera(Camobject);
                                         }
                                         break;
+                                    //case 3:
+                                    //    if (Helper.HasFeature(Enums.Features.Access_Media))
+                                    //    {
+                                    //        string url = MainForm.Webpage;
+                                    //        if (WsWrapper.WebsiteLive && MainForm.Conf.ServicesEnabled)
+                                    //        {
+                                    //            MainForm.OpenUrl(url);
+                                    //        }
+                                    //        else
+                                    //            MainClass.Connect(url, false);
+                                    //    }
+                                    //    break;
                                     case 3:
-                                        if (Helper.HasFeature(Enums.Features.Access_Media))
-                                        {
-                                            string url = MainForm.Webpage;
-                                            if (WsWrapper.WebsiteLive && MainForm.Conf.ServicesEnabled)
-                                            {
-                                                MainForm.OpenUrl(url);
-                                            }
-                                            else
-                                                MainClass.Connect(url, false);
-                                        }
-                                        break;
-                                    case 4:
                                         if (IsEnabled)
                                         {
                                             Snapshot();
                                         }
                                         break;
-                                    case 5:
+                                    case 4:
                                         Talk();
                                         break;
-                                    case 6:
+                                    case 5:
                                         TextToSpeech();
                                         break;
-                                    case 7:
+                                    case 6:
                                         Listen();
                                         break;
                                 }
@@ -1316,41 +1316,41 @@ namespace iSpyApplication.Controls
                                     _toolTipCam.Show(LocRm.GetString("Edit"), this, toolTipLocation, 1000);
                                     _ttind = 2;
                                     break;
+                                //case 3:
+                                //    if (Helper.HasFeature(Enums.Features.Access_Media))
+                                //    {
+                                //        _toolTipCam.Show(LocRm.GetString("MediaoverTheWeb"), this, toolTipLocation, 1000);
+                                //        _ttind = 3;
+                                //    }
+                                //    break;
                                 case 3:
-                                    if (Helper.HasFeature(Enums.Features.Access_Media))
+                                    if (Helper.HasFeature(Enums.Features.Save_Frames))
                                     {
-                                        _toolTipCam.Show(LocRm.GetString("MediaoverTheWeb"), this, toolTipLocation, 1000);
+                                        _toolTipCam.Show(LocRm.GetString("TakePhoto"), this, toolTipLocation, 1000);
                                         _ttind = 3;
                                     }
                                     break;
                                 case 4:
-                                    if (Helper.HasFeature(Enums.Features.Save_Frames))
+                                    if (_ttind != 4)
                                     {
-                                        _toolTipCam.Show(LocRm.GetString("TakePhoto"), this, toolTipLocation, 1000);
+                                        _toolTipCam.Show(LocRm.GetString("Talk"), this, toolTipLocation, 1000);
                                         _ttind = 4;
                                     }
                                     break;
                                 case 5:
                                     if (_ttind != 5)
                                     {
-                                        _toolTipCam.Show(LocRm.GetString("Talk"), this, toolTipLocation, 1000);
+                                        _toolTipCam.Show(LocRm.GetString("Text"), this, toolTipLocation, 1000);
                                         _ttind = 5;
                                     }
                                     break;
                                 case 6:
                                     if (_ttind != 6)
                                     {
-                                        _toolTipCam.Show(LocRm.GetString("Text"), this, toolTipLocation, 1000);
-                                        _ttind = 6;
-                                    }
-                                    break;
-                                case 7:
-                                    if (_ttind != 7)
-                                    {
                                         _toolTipCam.Show(Listening
                                         ? LocRm.GetString("StopListening")
                                         : LocRm.GetString("Listen"), this, toolTipLocation, 1000);
-                                        _ttind = 7;
+                                        _ttind = 6;
                                     }
                                     break;
                             }
@@ -2743,10 +2743,10 @@ namespace iSpyApplication.Controls
                 case 2://settings
                     rSrc = Helper.HasFeature(Enums.Features.Edit) ? MainForm.REdit : MainForm.REditOff;
                     break;
-                case 3://web
-                    rSrc = Helper.HasFeature(Enums.Features.Access_Media) ? MainForm.RWeb : MainForm.RWebOff;
-                    break;
-                case 4://grab
+                //case 3://web
+                //    rSrc = Helper.HasFeature(Enums.Features.Access_Media) ? MainForm.RWeb : MainForm.RWebOff;
+                //    break;
+                case 3://grab
                     if (b && Helper.HasFeature(Enums.Features.Save_Frames))
                         rSrc = MainForm.RGrab;
                     else
@@ -2754,20 +2754,20 @@ namespace iSpyApplication.Controls
                         rSrc = MainForm.RGrabOff;
                     }
                     break;
-                case 5://talk
+                case 4://talk
                     if (b && Camobject.settings.audiomodel != "None")
                         rSrc = Talking ? MainForm.RTalkOn : MainForm.RTalk;
                     else
                         rSrc = MainForm.RTalkOff;
                         
                     break;
-                case 6://text
+                case 5://text
                     if (b && Camobject.settings.audiomodel != "None")
                         rSrc = MainForm.RText;
                     else
                         rSrc = MainForm.RTextOff;
                     break;
-                case 7://listen
+                case 6://listen
                     if (b && Camobject.settings.micpair > -1)
                         rSrc = Listening ? MainForm.RListenOn : MainForm.RListen;
                     else

@@ -39,7 +39,6 @@
             this.lbObjects = new System.Windows.Forms.ListBox();
             this.ttObject = new System.Windows.Forms.ToolTip(this.components);
             this.label6 = new System.Windows.Forms.Label();
-            this.llblHelp = new System.Windows.Forms.LinkLabel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.chkOriginalSize = new System.Windows.Forms.CheckBox();
@@ -48,7 +47,6 @@
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.lblAccessGroups = new System.Windows.Forms.Label();
             this.txtAccessGroups = new System.Windows.Forms.TextBox();
-            this.linkLabel14 = new System.Windows.Forms.LinkLabel();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -110,13 +108,6 @@
             resources.ApplyResources(this.label6, "label6");
             this.label6.Name = "label6";
             // 
-            // llblHelp
-            // 
-            resources.ApplyResources(this.llblHelp, "llblHelp");
-            this.llblHelp.Name = "llblHelp";
-            this.llblHelp.TabStop = true;
-            this.llblHelp.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.llblHelp_LinkClicked);
-            // 
             // tableLayoutPanel1
             // 
             resources.ApplyResources(this.tableLayoutPanel1, "tableLayoutPanel1");
@@ -159,7 +150,6 @@
             this.tableLayoutPanel2.Controls.Add(this.lbObjects, 1, 0);
             this.tableLayoutPanel2.Controls.Add(this.lblAccessGroups, 0, 1);
             this.tableLayoutPanel2.Controls.Add(this.txtAccessGroups, 1, 1);
-            this.tableLayoutPanel2.Controls.Add(this.linkLabel14, 2, 1);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             // 
             // lblAccessGroups
@@ -172,13 +162,6 @@
             resources.ApplyResources(this.txtAccessGroups, "txtAccessGroups");
             this.txtAccessGroups.Name = "txtAccessGroups";
             // 
-            // linkLabel14
-            // 
-            resources.ApplyResources(this.linkLabel14, "linkLabel14");
-            this.linkLabel14.Name = "linkLabel14";
-            this.linkLabel14.TabStop = true;
-            this.linkLabel14.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel14_LinkClicked);
-            // 
             // tableLayoutPanel3
             // 
             resources.ApplyResources(this.tableLayoutPanel3, "tableLayoutPanel3");
@@ -188,7 +171,6 @@
             // flowLayoutPanel2
             // 
             this.flowLayoutPanel2.Controls.Add(this.btnFinish);
-            this.flowLayoutPanel2.Controls.Add(this.llblHelp);
             resources.ApplyResources(this.flowLayoutPanel2, "flowLayoutPanel2");
             this.flowLayoutPanel2.Name = "flowLayoutPanel2";
             // 
@@ -239,7 +221,6 @@
         private System.Windows.Forms.ListBox lbObjects;
         private System.Windows.Forms.ToolTip ttObject;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.LinkLabel llblHelp;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private System.Windows.Forms.Panel pnlFloorPlan;
@@ -251,6 +232,5 @@
         private System.Windows.Forms.CheckBox chkOriginalSize;
         private System.Windows.Forms.Label lblAccessGroups;
         private System.Windows.Forms.TextBox txtAccessGroups;
-        private System.Windows.Forms.LinkLabel linkLabel14;
     }
 }

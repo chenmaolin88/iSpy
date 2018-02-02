@@ -137,7 +137,7 @@ namespace iSpyApplication
             label2.Text = LocRm.GetString("Image");
             label3.Text = LocRm.GetString("addremoveObjectsdr");
             label6.Text = LocRm.GetString("FloorPlanControlInstructions");
-            llblHelp.Text = linkLabel14.Text = LocRm.GetString("help");
+            //llblHelp.Text = linkLabel14.Text = LocRm.GetString("help");
             lblAccessGroups.Text = LocRm.GetString("AccessGroups");
             LocRm.SetString(chkOriginalSize,"OriginalSize");
         }

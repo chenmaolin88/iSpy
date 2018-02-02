@@ -3334,7 +3334,7 @@ namespace iSpyApplication
                 }
             }
             _houseKeepingTimer.Stop();
-            _tsslStats.Text = LocRm.GetString("Loading");
+            //_tsslStats.Text = LocRm.GetString("Loading");
             Application.DoEvents();
             RemoveObjects();
             flowPreview.Loading = true;

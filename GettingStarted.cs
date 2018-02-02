@@ -11,7 +11,7 @@ namespace iSpyApplication
         private WebBrowser _wbGettingStarted;
         public GettingStarted()
         {
-            InitializeComponent();
+            //`InitializeComponent();
             RenderResources();
         }
 
@@ -65,6 +65,11 @@ namespace iSpyApplication
         private void GettingStarted_FormClosing(object sender, FormClosingEventArgs e)
         {
             MainForm.Conf.Enabled_ShowGettingStarted = chkShowGettingStarted.Checked;
+        }
+
+        private void pnlWBContainer_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

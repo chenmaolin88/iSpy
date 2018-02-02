@@ -346,9 +346,9 @@ namespace iSpyApplication
             label18.Text = LocRm.GetString("Arguments");
             lblInstallVLC.Text = LocRm.GetString("VLCConnectInfo");
             linkLabel3.Text = LocRm.GetString("DownloadVLC");
-            linkLabel1.Text = LocRm.GetString("UseiSpyServerText");
+            //linkLabel1.Text = LocRm.GetString("UseiSpyServerText");
 
-            llblHelp.Text = LocRm.GetString("help");
+            //llblHelp.Text = LocRm.GetString("help");
             LocRm.SetString(label21,"FileURL");
             LocRm.SetString(label18, "Arguments");
             LocRm.SetString(lblInstallVLC, "VLCHelp");

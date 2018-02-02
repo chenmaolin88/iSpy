@@ -279,7 +279,7 @@ namespace iSpyApplication
             toolTip1.SetToolTip(txtMicrophoneName, LocRm.GetString("ToolTip_MicrophoneName"));
             toolTip1.SetToolTip(txtInactiveRecord, LocRm.GetString("ToolTip_InactiveRecordAudio"));
             toolTip1.SetToolTip(txtBuffer, LocRm.GetString("ToolTip_BufferAudio"));
-            llblHelp.Text = LocRm.GetString("help");
+            //llblHelp.Text = LocRm.GetString("help");
             lblAccessGroups.Text = LocRm.GetString("AccessGroups");
             toolTip1.SetToolTip(ranger1, LocRm.GetString("ToolTip_MotionSensitivity"));
             label74.Text = LocRm.GetString("Directory");

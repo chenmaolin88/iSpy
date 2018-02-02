@@ -485,8 +485,8 @@ namespace iSpyApplication
             label2.Text = LocRm.GetString("MjpegUrl");
             label5.Text = label15.Text = LocRm.GetString("Username");
             label6.Text = label17.Text = LocRm.GetString("Password");
-            linkLabel1.Text = LocRm.GetString("HelpMeFindTheRightUrl");
-            linkLabel2.Text = LocRm.GetString("HelpMeFindTheRightUrl");
+            //linkLabel1.Text = LocRm.GetString("HelpMeFindTheRightUrl");
+            //linkLabel2.Text = LocRm.GetString("HelpMeFindTheRightUrl");
             tabPage1.Text = LocRm.GetString("JpegUrl");
             tabPage2.Text = LocRm.GetString("MjpegUrl");
             tabPage4.Text = LocRm.GetString("LocalDevice");
@@ -510,8 +510,8 @@ namespace iSpyApplication
             snapshotsLabel.Text = LocRm.GetString("SnapshotsResolution");
             label18.Text = LocRm.GetString("Arguments");
             linkLabel3.Text = LocRm.GetString("DownloadVLC");
-            linkLabel4.Text = LocRm.GetString("UseiSpyServerText");
-            llblHelp.Text = LocRm.GetString("help");
+            //linkLabel4.Text = LocRm.GetString("UseiSpyServerText");
+            //llblHelp.Text = LocRm.GetString("help");
             LocRm.SetString(label20, "DecodeKey");
             LocRm.SetString(label22, "OptionaliSpyServer");           
             LocRm.SetString(label3, "URL");
@@ -519,7 +519,7 @@ namespace iSpyApplication
             LocRm.SetString(label42,"DesktopHelp");
             LocRm.SetString(chkMousePointer, "MousePointer");
             LocRm.SetString(btnGetStreamSize, "GetStreamSize");
-            LocRm.SetString(linkLabel5, "Help");
+            //LocRm.SetString(linkLabel5, "Help");
             LocRm.SetString(label18, "Arguments");
             LocRm.SetString(linkLabel3, "DownloadVLC");
             LocRm.SetString(chkKinectSkeletal, "ShowSkeleton");
@@ -1682,6 +1682,11 @@ namespace iSpyApplication
             UISync.Execute(() => {
                                      MessageBox.Show(this, "Connected!"); });
             vfr.Close();
+        }
+
+        private void linkLabel4_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+
         }
     }
     

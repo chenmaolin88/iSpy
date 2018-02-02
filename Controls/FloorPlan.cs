@@ -213,18 +213,18 @@ namespace iSpyApplication.Controls
                             case 0:
                                MainClass.EditFloorplan(Fpobject);
                                 break;
-                            case 1:
-                                if (Helper.HasFeature(Enums.Features.Access_Media))
-                                {
-                                    string url = MainForm.Webpage;
-                                    if (WsWrapper.WebsiteLive && MainForm.Conf.ServicesEnabled)
-                                    {
-                                        MainForm.OpenUrl(url);
-                                    }
-                                    else
-                                        MainClass.Connect(url, false);
-                                }
-                                break;
+                            //case 1:
+                            //    if (Helper.HasFeature(Enums.Features.Access_Media))
+                            //    {
+                            //        string url = MainForm.Webpage;
+                            //        if (WsWrapper.WebsiteLive && MainForm.Conf.ServicesEnabled)
+                            //        {
+                            //            MainForm.OpenUrl(url);
+                            //        }
+                            //        else
+                            //            MainClass.Connect(url, false);
+                            //    }
+                            //    break;
                         }
                     }
                 }
@@ -287,13 +287,13 @@ namespace iSpyApplication.Controls
                                     _toolTipFp.Show(LocRm.GetString("Edit"), this,toolTipLocation, 1000);
                                     _ttind = 0;
                                     break;
-                                case 1:
-                                    if (Helper.HasFeature(Enums.Features.Access_Media))
-                                    {
-                                        _toolTipFp.Show(LocRm.GetString("MediaoverTheWeb"), this, toolTipLocation, 1000);
-                                        _ttind = 1;
-                                    }
-                                    break;
+                                //case 1:
+                                //    if (Helper.HasFeature(Enums.Features.Access_Media))
+                                //    {
+                                //        _toolTipFp.Show(LocRm.GetString("MediaoverTheWeb"), this, toolTipLocation, 1000);
+                                //        _ttind = 1;
+                                //    }
+                                //    break;
                             }
                         }
                     }
@@ -576,9 +576,9 @@ namespace iSpyApplication.Controls
                 case 0://edit
                     rSrc = MainForm.REdit;
                     break;
-                case 1://web
-                    rSrc = Helper.HasFeature(Enums.Features.Access_Media) ? MainForm.RWeb : MainForm.RWebOff;
-                    break;
+                //case 1://web
+                //    rSrc = Helper.HasFeature(Enums.Features.Access_Media) ? MainForm.RWeb : MainForm.RWebOff;
+                //    break;
             }
 
             if (MainForm.Conf.BigButtons)
