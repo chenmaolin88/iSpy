@@ -81,11 +81,11 @@ namespace iSpyApplication
             // _lblCopyright
             // 
             this._lblCopyright.Dock = System.Windows.Forms.DockStyle.Fill;
-            this._lblCopyright.Location = new System.Drawing.Point(174, 25);
+            this._lblCopyright.Location = new System.Drawing.Point(174, 23);
             this._lblCopyright.Name = "_lblCopyright";
-            this._lblCopyright.Size = new System.Drawing.Size(249, 25);
+            this._lblCopyright.Size = new System.Drawing.Size(249, 23);
             this._lblCopyright.TabIndex = 13;
-            this._lblCopyright.Text = "Copyright © 2016 DeveloperInABox";
+            this._lblCopyright.Text = "Copyright ?2016 DeveloperInABox";
             this._lblCopyright.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // _pictureBox1
@@ -94,29 +94,29 @@ namespace iSpyApplication
             this._pictureBox1.Location = new System.Drawing.Point(3, 3);
             this._pictureBox1.Name = "_pictureBox1";
             this.tableLayoutPanel1.SetRowSpan(this._pictureBox1, 5);
-            this._pictureBox1.Size = new System.Drawing.Size(152, 142);
+            this._pictureBox1.Size = new System.Drawing.Size(152, 132);
             this._pictureBox1.TabIndex = 17;
             this._pictureBox1.TabStop = false;
             // 
             // linkLabel1
             // 
             this.linkLabel1.AutoSize = true;
-            this.linkLabel1.Location = new System.Drawing.Point(174, 50);
+            this.linkLabel1.Location = new System.Drawing.Point(174, 46);
             this.linkLabel1.Name = "linkLabel1";
             this.linkLabel1.Padding = new System.Windows.Forms.Padding(3);
-            this.linkLabel1.Size = new System.Drawing.Size(154, 23);
+            this.linkLabel1.Size = new System.Drawing.Size(89, 18);
             this.linkLabel1.TabIndex = 21;
             this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "www.iSpyConnect.com";
+            this.linkLabel1.Text = "www.baidu.com";
             this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
             // 
             // _btnOk
             // 
             this._btnOk.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this._btnOk.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this._btnOk.Location = new System.Drawing.Point(333, 78);
+            this._btnOk.Location = new System.Drawing.Point(333, 72);
             this._btnOk.Name = "_btnOk";
-            this._btnOk.Size = new System.Drawing.Size(90, 26);
+            this._btnOk.Size = new System.Drawing.Size(90, 24);
             this._btnOk.TabIndex = 19;
             this._btnOk.Text = "OK";
             this._btnOk.UseVisualStyleBackColor = true;
@@ -127,7 +127,7 @@ namespace iSpyApplication
             this._lblVersion.AutoSize = true;
             this._lblVersion.Location = new System.Drawing.Point(174, 0);
             this._lblVersion.Name = "_lblVersion";
-            this._lblVersion.Size = new System.Drawing.Size(56, 17);
+            this._lblVersion.Size = new System.Drawing.Size(47, 12);
             this._lblVersion.TabIndex = 18;
             this._lblVersion.Text = "Version";
             // 
@@ -145,9 +145,9 @@ namespace iSpyApplication
             this.tableLayoutPanel1.Location = new System.Drawing.Point(8, 8);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 5;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 23F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 23F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 23F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel1.Size = new System.Drawing.Size(426, 129);
@@ -155,7 +155,7 @@ namespace iSpyApplication
             // 
             // AboutForm
             // 
-            this.AutoScaleBaseSize = new System.Drawing.Size(6, 15);
+            this.AutoScaleBaseSize = new System.Drawing.Size(6, 14);
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(442, 145);
@@ -194,7 +194,7 @@ namespace iSpyApplication
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            MainForm.StartBrowser("http://www.ispyconnect.com");
+            MainForm.StartBrowser("http://www.baidu.com");
         }
 
         
